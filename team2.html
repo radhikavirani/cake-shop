@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team 2</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/team2.css" />
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/cdnjs.cloudflare.com_ajax_libs_animate.css_4.1.1_animate.min.css" />
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+</head>
+
+<body>
+
+    <script src="js/code.jquery-3.7.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <!-- navbar  -->
+
+    <nav class="navbar navbar-expand-lg navbar-light nav-pdg nev-bg h-hide">
+        <div class="container-fluid p-0">
+          <a class="navbar-brand p-0" href="#"><img class="logo" src="img/logo.png" alt="" /></a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+              <li class="nav-item">
+                <a class="nav-link active nav-line" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active nav-line" aria-current="page" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active megamenu-icon" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false" href="team1.html">Team<i class="fa-solid fa-chevron-right fa-rotate-90"></i></a>
+                <ul class="mega-menu dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="team2.html"><i class="fa-solid fa-arrow-right-long"></i>Team member</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active nav-line" aria-current="page" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-line active" aria-current="page" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active nav-line" aria-current="page" href="contacts.html">Contacts</a>
+              </li>
+            </ul>
+            <div class="nav-icon d-flex">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </div>
+        <!-- hide-hdr -->
+        <div class="d-flex hide-logo">
+          <a href=""><img src="img/logo.png" width="50px" height="50px" alt=""></a>
+        </div>
+    
+        <div class="my-tog-btn" id="text">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    
+        <div class="side-menu side-menu-active">
+          <div class="text1">
+            <i class="fa-solid fa-xmark i-con"></i>
+          </div>
+    
+          <div class="inner">
+            <div class="s-nav">
+              <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team1.html">Team</a></li>
+                <li><a href="team2.html">Team member</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+                <a class="nav-icon d-flex">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+          </div>
+        </div>
+        <script>
+
+            $(document).ready(function () {
+              var i = 0;
+              $("#text").click(function () {
+                if (i % 2 == 1) {
+                  $(".side-menu").hide(300)
+                }
+                else {
+                  $(".side-menu").show(300)
+                }
+              });
+        
+            });
+        
+        
+            $(document).ready(function () {
+              var a = 1;
+              $(".text1").click(function () {
+                if (a % 2 == 1) {
+                  $(".side-menu").hide(300)
+                }
+                else {
+                  $(".side-menu").show(300)
+                }
+                // i++;
+              });
+        
+            });
+        
+          </script>
+    </nav>
+
+    <!-- header fix -->
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 100) {
+                $(".nev-bg").addClass("test");
+            } else {
+                $(".nev-bg").removeClass("test");
+            }
+        });
+    </script>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 100) {
+                $(".logo").addClass("logo1");
+            } else {
+                $(".logo").removeClass("logo1");
+            }
+        });
+    </script>
+
+
+
+    <!-- main-Team-->
+
+    <div class="container-fluid team-bg">
+        <div class="container">
+
+            <div class="heading-modify">
+                <h6>TEAM MEMBER</h6>
+                <h2>Meet one of our qualified team members</h2>
+            </div>
+
+            <div class="row row-30 row-m">
+                <div class="col-md-6 col-pdg team-img">
+                    <img src="img/a1.jpg">
+                </div>
+
+                <div class="col-md-6">
+                    <div class="person-classic person-classic-lg">
+                        <div class="person-classic-title">Jenny Wilson</div>
+                        <div class="person-classic-meta">Head Chef</div>
+                        <div class="person-classic-social">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <div class="big person-classic-text">Our mission is to bake with passion. Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit sum sollicitudin massa in finibus gravida.</div>
+                    </div>
+
+                    <div class="progress-linear">
+                        <div class="progress-linear-header">
+                            <p class="progress-linear-title">Experience</p>
+                            <span class="progress-linear-counter" id="count1">90</span>
+                        </div>
+                        <div class="progress-linear-body">
+                            <div class="progress-linear-bar1"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-linear">
+                        <div class="progress-linear-header">
+                            <p class="progress-linear-title">Patience</p>
+                            <span class="progress-linear-counter" id="count2">74</span>
+                        </div>
+                        <div class="progress-linear-body">
+                            <div class="progress-linear-bar2"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-linear">
+                        <div class="progress-linear-header">
+                            <p class="progress-linear-title">Attention to detail</p>
+                            <span class="progress-linear-counter" id="count3">86</span>
+                        </div>
+                        <div class="progress-linear-body">
+                            <div class="progress-linear-bar3"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-linear">
+                        <div class="progress-linear-header">
+                            <p class="progress-linear-title">Creativity</p>
+                            <span class="progress-linear-counter" id="count4">96</span>
+                        </div>
+                        <div class="progress-linear-body">
+                            <div class="progress-linear-bar4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            var win = 0
+            $(window).scroll(function () {
+                var ot = $("#count1").offset().top - window.innerHeight;
+                if (win == 0 && $(window).scrollTop() > ot) {
+                    var a = $("#count1").text()
+                    var cdmi = setInterval(demo, 20)
+                    var i = 40
+                    function demo() {
+                        if (i == a) {
+                            clearInterval(cdmi)
+                        }
+                        $("#count1").text(i)
+                        i++
+                    }
+                }
+            })
+        })
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            var win = 0
+            $(window).scroll(function () {
+                var ot = $("#count2").offset().top - window.innerHeight;
+                if (win == 0 && $(window).scrollTop() > ot) {
+                    var a = $("#count2").text()
+                    var cdmi = setInterval(demo, 20)
+                    var i = 40
+                    function demo() {
+                        if (i == a) {
+                            clearInterval(cdmi)
+                        }
+                        $("#count2").text(i)
+                        i++
+                    }
+                }
+            })
+        })
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            var win = 0
+            $(window).scroll(function () {
+                var ot = $("#count3").offset().top - window.innerHeight;
+                if (win == 0 && $(window).scrollTop() > ot) {
+                    var a = $("#count3").text()
+                    var cdmi = setInterval(demo, 20)
+                    var i = 60
+                    function demo() {
+                        if (i == a) {
+                            clearInterval(cdmi)
+                        }
+                        $("#count3").text(i)
+                        i++
+                    }
+                }
+            })
+        })
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            var win = 0
+            $(window).scroll(function () {
+                var ot = $("#count4").offset().top - window.innerHeight;
+                if (win == 0 && $(window).scrollTop() > ot) {
+                    var a = $("#count4").text()
+                    var cdmi = setInterval(demo, 20)
+                    var i = 50
+                    function demo() {
+                        if (i == a) {
+                            clearInterval(cdmi)
+                        }
+                        $("#count4").text(i)
+                        i++
+                    }
+                }
+            })
+        })
+    </script>
+
+
+    <!-- footer..... -->
+
+    <div class="container-fluid footer-classic">
+        <div class="container">
+          <div class="row align">
+            <div class="col-lg-3">
+              <div class="row row-15 align-items-center align">
+                <div class="col-xs-3 col-md-2 col-lg-12">
+    
+                  <a class="brand footer-logo" href="home.html">
+                    <img class="brand-logo-light" src="img/logo.png">
+                  </a>
+                </div>
+                <div class="col-xs-9 col-md-8 col-lg-12 tx-p">
+                  <p>Beans is the #1 local and family-owned cake shop &amp; bakery aimed at making cakes that create
+                    long-lasting memories.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+              <div class="list-icons">
+                <div class="list-icons-item">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <div class="list-icons-text xsmall">
+                    <a class="link-inherit" href="#">2130 Fulton Street, <br>San Diego, CA 94117-1080 USA</a>
+                  </div>
+                </div>
+                <div class="list-icons-item">
+                  <i class="fa-solid fa-phone"></i>
+                  <div class="list-icons-text">
+                    <span>Call Us: </span>
+                    <a class="link-inherit" href="#">800-123-4567</a>
+                  </div>
+                </div>
+                <div class="list-icons-item">
+                  <i class="fa-solid fa-envelope"></i>
+                  <div class="list-icons-text">
+                    <a class="link-inherit" href="#">Send us an email</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto col-auto1 col-xs-4 col-md-2">
+              <h6 class="heading-modify">Company</h6>
+              <ul class="footer-list">
+                <li><a class="link-inherit" href="about.html">About Us</a></li>
+                <li><a class="link-inherit" href="team1.html">Our Team</a></li>
+                <li><a class="link-inherit" href="home.html">Blog</a></li>
+                <li><a class="link-inherit" href="home.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-auto col-auto1 col-xs-4 col-md-2">
+              <h6 class="heading-modify">INFORMATION</h6>
+              <ul class="footer-list">
+                <li><a class="link-inherit" href="#">FAQ</a></li>
+                <li><a class="link-inherit" href="#">Terms</a></li>
+                <li><a class="link-inherit" href="#">Delivery Info</a></li>
+                <li><a class="link-inherit" href="#">Refund policy</a></li>
+                <li><a class="link-inherit" href="contacts.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-auto col-auto1 col-xs-4 col-md-2">
+              <h6 class="heading-modify">ORDER</h6>
+              <ul class="footer-list">
+                <li><a class="link-inherit" href="home.html">My Account</a></li>
+                <li><a class="link-inherit" href="home.html">View Cart</a></li>
+                <li><a class="link-inherit" href="home.html">Wishlist</a></li>
+                <li><a class="link-inherit" href="home.html">Checkout</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-divider"></div>
+          <div class="footer-bottom">
+            <div class="row row-30 justify-content-between">
+              <div class="col-auto">
+                <p class="rights">
+                  <span>©&nbsp;</span>
+                  <span class="copyright-year">2024</span>
+                  <span>&nbsp;</span>
+                  <span>Beans</span>
+                  <span>.&nbsp;</span>
+                  <span>All Rights Reserved</span>
+                  <span>.&nbsp;</span>
+                  <a class="link-inherit" href="home.html">Privacy Policy</a>
+                </p>
+              </div>
+              <div class="col-auto">
+                <div class="list-social">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- btn fix.......  -->
+
+    <div class="fix-btn"><i class="fa-solid fa-chevron-right fa-rotate-270"></i></div>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 100) {
+                $('.fix-btn').addClass('test1')
+            }
+            else {
+                $('.fix-btn').removeClass('test1')
+            }
+        })
+        $('.fix-btn').click(function () {
+            $("html,body").animate
+                ({ scrollTop: 0 }, 100)
+        })
+    </script>
+
+
+
+</body>
+
+</html>

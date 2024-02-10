@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/about.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/cdnjs.cloudflare.com_ajax_libs_animate.css_4.1.1_animate.min.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+</head>
+
+<body>
+
+    <script src="js/code.jquery-3.7.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <!-- navbar  -->
+
+    <nav class="navbar navbar-expand-lg navbar-light nav-pdg nev-bg h-hide">
+        <div class="container-fluid p-0">
+            <a class="navbar-brand p-0" href="#"><img class="logo" src="img/logo.png" alt=""></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+                    <li class="nav-item">
+                        <a class="nav-link active nav-line" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active nav-line" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active megamenu-icon" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" href="team1.html">Team<i
+                                class="fa-solid fa-chevron-right fa-rotate-90"></i></a>
+                        <ul class="mega-menu dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="team2.html"><i
+                                        class="fa-solid fa-arrow-right-long"></i>Team
+                                    member</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active nav-line" aria-current="page" href="index.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-line active" aria-current="page" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active nav-line" aria-current="page" href="contacts.html">Contacts</a>
+                    </li>
+                </ul>
+                <div class="nav-icon d-flex">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- hide-hdr -->
+        <div class="d-flex hide-logo">
+            <a href=""><img src="img/logo.png" width="50px" height="50px" alt=""></a>
+        </div>
+
+        <div class="my-tog-btn" id="text">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="side-menu side-menu-active">
+            <div class="text1">
+                <i class="fa-solid fa-xmark i-con"></i>
+            </div>
+
+            <div class="inner">
+                <div class="s-nav">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team1.html">Team</a></li>
+                        <li><a href="team2.html">Team member</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="contacts.html">Contact</a></li>
+                        <a class="nav-icon d-flex">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script>
+
+        $(document).ready(function () {
+            var i = 0;
+            $("#text").click(function () {
+                if (i % 2 == 1) {
+                    $(".side-menu").hide(300)
+                }
+                else {
+                    $(".side-menu").show(300)
+                }
+            });
+
+        });
+
+
+        $(document).ready(function () {
+            var a = 1;
+            $(".text1").click(function () {
+                if (a % 2 == 1) {
+                    $(".side-menu").hide(300)
+                }
+                else {
+                    $(".side-menu").show(300)
+                }
+                // i++;
+            });
+
+        });
+
+    </script>
+
+
+    <!-- header fix -->
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 100) {
+                $('.nev-bg').addClass('test')
+            }
+            else {
+                $('.nev-bg').removeClass('test')
+            }
+        })
+    </script>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 100) {
+                $('.logo').addClass('logo1')
+            }
+            else {
+                $('.logo').removeClass('logo1')
+            }
+        })
+    </script>
+
+
+    <!-- About-->
+
+    <div class="container-fluid about-bg">
+        <div class="container">
+            <div class="row justify-content-between align-items-center tx-c">
+                <div class="col-md-6 justify-content-end d-flex col-pdg dsp-n">
+                    <img class="img-custom-width-1" data-aos="fade-right" src="img/about.jpg">
+                </div>
+                <div class="col-md-6 col-pdg">
+                    <h6 class="heading-modify">Who we are</h6>
+                    <h2 class="tx-modify">We offer a wide variety of celebration cakes for birthdays, graduation
+                        parties, and other types of events.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Team-->
+
+    <div class="container-fluid team-bg">
+        <div class="row w-100">
+            <div class="col-4 pro-a">
+                <div class="pro-tx">
+                    <h6 class="heading-modify">WHO WE ARE</h6>
+                    <h3>Our great team</h3>
+                    <div class="big1">Viverra risus turpis consequat velit ultrices maecenas congue mi. Egestas orci eu
+                        eget tellus morbi. Odio cras tellus ut duis tristique.</div>
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme pro-r p-0">
+                <div class="item">
+                    <img src="img/a1.jpg" alt="">
+                    <h6 class="product-classic-title"><a href="#">Jenny Wilson</a></h6>
+                    <div class="product-classic-price">Head Chef</div>
+                    <div class="person-classic-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/a2.jpg" alt="">
+                    <h6 class="product-classic-title"><a href="#">Theresa Webb</a></h6>
+                    <div class="product-classic-price">Pastry Chef</div>
+                    <div class="person-classic-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/a3.jpg" alt="">
+                    <h6 class="product-classic-title"><a href="#">Floyd Miles</a></h6>
+                    <div class="product-classic-price">Cake Decorator</div>
+                    <div class="person-classic-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/a4.jpg" alt="">
+                    <h6 class="product-classic-title"><a href="#">Leslie Alexander</a></h6>
+                    <div class="product-classic-price">Kitchen Manager</div>
+                    <div class="person-classic-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            dotsContainer: true,
+            autoplay: true,
+            autoplayTimeout: 1200,
+            loop: true,
+            center: true,
+            margin: 20,
+            URLhashListener: true,
+            autoplayHoverPause: true,
+            startPosition: 'URLHash',
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                400: {
+                    items: 2,
+                },
+                576: {
+                    items: 3,
+                },
+                1000: {
+                    items: 4,
+                }
+            }
+        });
+    </script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <!-- Menu-->
+
+    <div class="container-fluid menu-bg">
+        <div class="container row-a">
+            <div class="row row-30 r-width align-items-center">
+                <div class="col-md-6 d-flex justify-content-end col-pdg dsp-n">
+                    <img class="img-custom-width-2" src="img/menu-img.jpg">
+                </div>
+                <div class="col-lg-6 col-pdg">
+                    <div class="layout-bg-right layout-spacing-1">
+                        <h6 class="heading-modify">From our menu</h6>
+                        <h3 class="h-tx">Today's specials</h3>
+                        <div class="menu-list">
+                            <div class="menu-list-item">
+                                <div class="menu-list-header h6">
+                                    <div class="menu-list-title"><a href="#">Heart Cookies</a></div>
+                                    <div class="menu-list-divider"></div>
+                                    <div class="menu-list-price">$15</div>
+                                </div>
+                                <div class="menu-list-meta">(eggs, milk, sugar, vanilla)</div>
+                            </div>
+                            <div class="menu-list-item">
+                                <div class="menu-list-header h6">
+                                    <div class="menu-list-title"><a href="#">Macaroons</a></div>
+                                    <div class="menu-list-divider"></div>
+                                    <div class="menu-list-price">$15</div>
+                                </div>
+                                <div class="menu-list-meta">(sugar, vanilla extract, almond flour)</div>
+                            </div>
+                            <div class="menu-list-item">
+                                <div class="menu-list-header h6">
+                                    <div class="menu-list-title"><a href="#">White cake</a></div>
+                                    <div class="menu-list-divider"></div>
+                                    <div class="menu-list-price">$27</div>
+                                </div>
+                                <div class="menu-list-meta">(eggs, white sugar, milk)</div>
+                            </div>
+                            <div class="menu-list-item">
+                                <div class="menu-list-header h6">
+                                    <div class="menu-list-title"><a href="#">Chocolate Chip cookies</a></div>
+                                    <div class="menu-list-divider"></div>
+                                    <div class="menu-list-price">$27</div>
+                                </div>
+                                <div class="menu-list-meta">(brown sugar, eggs, chocolate)</div>
+                            </div>
+                            <div class="menu-list-item">
+                                <div class="menu-list-header h6">
+                                    <div class="menu-list-title"><a href="#">Candy cane buttercream cake</a></div>
+                                    <div class="menu-list-divider"></div>
+                                    <div class="menu-list-price">$15</div>
+                                </div>
+                                <div class="menu-list-meta">(cake flour, eggs, sugar, vanilla extract)</div>
+                            </div>
+                            <div class="menu-list-item">
+                                <div class="menu-list-header h6">
+                                    <div class="menu-list-title"><a href="#">Chocolate pumpkin Cake</a></div>
+                                    <div class="menu-list-divider"></div>
+                                    <div class="menu-list-price">$27</div>
+                                </div>
+                                <div class="menu-list-meta">(pumpkin puree, brown sugar, cocoa powder)</div>
+                            </div>
+                            <div class="menu-list-item">
+                                <div class="menu-list-header h6">
+                                    <div class="menu-list-title"><a href="#">Apple Crumble Cake</a></div>
+                                    <div class="menu-list-divider"></div>
+                                    <div class="menu-list-price">$27</div>
+                                </div>
+                                <div class="menu-list-meta">(medium apples, cinnamon, milk, vanilla)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 3 cards-->
+
+    <div class="container-fluid bg-crd">
+        <div class="container">
+            <h6 class="heading-modify">What people say</h6>
+            <h3 class="h-tx">Testimonials</h3>
+            <div class="row-30 crd-m d-flex">
+                <div class="col-4 tx-crd crd-mrgn col-hid">
+                    <div class="crd-tx ">
+                        <i class="fa-regular fa-user"></i>
+                        <p>Maecenas nulla massa sit in. Turpis eu orci nisl ullamcorper consectetur placerat eget urna,
+                            cum. Facilisi gravida velit.</p>
+                        <h3>Cameron Williamson</h3>
+                    </div>
+                    <div class="star-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="col-4 tx-crd crd-mrgn col-hid1">
+                    <div class="crd-tx">
+                        <i class="fa-regular fa-user"></i>
+                        <p>Risus quam duis lectus metus, libero amet. Quam ut non ut nunc aenean imperdiet proin
+                            consectetur bibendum.</p>
+                        <h3>Jane Peterson</h3>
+                    </div>
+                    <div class="star-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="col-4 tx-crd">
+                    <div class="crd-tx">
+                        <i class="fa-regular fa-user"></i>
+                        <p>A quisque sit ornare tristique velit velit. Est diam mauris, massa vitae auctor. Fames donec
+                            tellus tellus ut. In ut magna.</p>
+                        <h3>Edward Smith</h3>
+                    </div>
+                    <div class="star-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- 3 cards img & tx.... -->
+
+    <div class="container-fluid card-bg">
+        <div class="row p-0 w-100 i-align">
+            <div class="col-4 p-0 i-width">
+                <div class="crd-img1"></div>
+            </div>
+            <div class="col-4 crd-tx-p text-center i-width">
+                <div class="crd-tx">
+                    <h3>Our mission is to bake with passion</h3>
+                    <p>Est netus turpis at habitant vitae id enim eget. Urna pellentesque nunc est arcu et. Aliquam erat
+                        augue integer tortor. Erat eget condimentum.</p>
+                    <a href="menu.html">
+                        <button type="button" class="btn">Menu<i class="fa-solid fa-chevron-right"></i></button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 p-0 i-width">
+                <div class="crd-img2"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- title & logo -->
+
+    <div class="container-fluid logos-bg">
+        <div class="container">
+            <div class="row p-0">
+                <div class="col-md-4 col-mb">
+                    <h6 class="heading-modify">Clients</h6>
+                    <h3 class="h-tx">Trustworthy partners</h3>
+                    <div class="big">Lorem ipsum dolor sit amet, consectetur adipiscing elit sum sollicitudin massa in
+                        finibus gravida.</div>
+                </div>
+                <div class="col-md-8 col_a">
+                    <div class="row row-30">
+                        <div class="col-xs-6 col-md-4 col-xl-3 col-mb logo-bg width-50">
+                            <a class="image-link" href="#">
+                                <img src="img/l1.png">
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-4 col-xl-3 col-mb logo-bg width-50">
+                            <a class="image-link" href="#">
+                                <img src="img/l2.png">
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-4 col-xl-3 col-mb logo-bg width-50">
+                            <a class="image-link" href="#">
+                                <img src="img/l3.png">
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-4 col-xl-3 col-mb logo-bg width-50">
+                            <a class="image-link" href="#">
+                                <img src="img/l4.png">
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-4 col-xl-3 col-mb logo-bg width-50">
+                            <a class="image-link" href="#">
+                                <img src="img/l5.png">
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-4 col-xl-3 col-mb logo-bg width-50">
+                            <a class="image-link" href="#">
+                                <img src="img/l6.png">
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-4 col-xl-3 col-mb logo-bg width-50">
+                            <a class="image-link" href="#">
+                                <img src="img/l7.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer..... -->
+
+    <div class="container-fluid footer-classic">
+        <div class="container">
+            <div class="row align">
+                <div class="col-lg-3">
+                    <div class="row row-15 align-items-center align">
+                        <div class="col-xs-3 col-md-2 col-lg-12">
+
+                            <a class="brand footer-logo" href="home.html">
+                                <img class="brand-logo-light" src="img/logo.png">
+                            </a>
+                        </div>
+                        <div class="col-xs-9 col-md-8 col-lg-12 tx-p">
+                            <p>Beans is the #1 local and family-owned cake shop &amp; bakery aimed at making cakes that
+                                create
+                                long-lasting memories.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="list-icons">
+                        <div class="list-icons-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="list-icons-text xsmall">
+                                <a class="link-inherit" href="#">2130 Fulton Street, <br>San Diego, CA 94117-1080
+                                    USA</a>
+                            </div>
+                        </div>
+                        <div class="list-icons-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="list-icons-text">
+                                <span>Call Us: </span>
+                                <a class="link-inherit" href="#">800-123-4567</a>
+                            </div>
+                        </div>
+                        <div class="list-icons-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="list-icons-text">
+                                <a class="link-inherit" href="#">Send us an email</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto col-xs-4 col-md-2">
+                    <h6 class="heading-modify">Company</h6>
+                    <ul class="footer-list">
+                        <li><a class="link-inherit" href="about.html">About Us</a></li>
+                        <li><a class="link-inherit" href="team1.html">Our Team</a></li>
+                        <li><a class="link-inherit" href="home.html">Blog</a></li>
+                        <li><a class="link-inherit" href="home.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-auto col-xs-4 col-md-2">
+                    <h6 class="heading-modify">INFORMATION</h6>
+                    <ul class="footer-list">
+                        <li><a class="link-inherit" href="#">FAQ</a></li>
+                        <li><a class="link-inherit" href="#">Terms</a></li>
+                        <li><a class="link-inherit" href="#">Delivery Info</a></li>
+                        <li><a class="link-inherit" href="#">Refund policy</a></li>
+                        <li><a class="link-inherit" href="contacts.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-auto col-xs-4 col-md-2">
+                    <h6 class="heading-modify">ORDER</h6>
+                    <ul class="footer-list">
+                        <li><a class="link-inherit" href="home.html">My Account</a></li>
+                        <li><a class="link-inherit" href="home.html">View Cart</a></li>
+                        <li><a class="link-inherit" href="home.html">Wishlist</a></li>
+                        <li><a class="link-inherit" href="home.html">Checkout</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <div class="row row-30 justify-content-between">
+                    <div class="col-auto">
+                        <p class="rights">
+                            <span>©&nbsp;</span>
+                            <span class="copyright-year">2024</span>
+                            <span>&nbsp;</span>
+                            <span>Beans</span>
+                            <span>.&nbsp;</span>
+                            <span>All Rights Reserved</span>
+                            <span>.&nbsp;</span>
+                            <a class="link-inherit" href="home.html">Privacy Policy</a>
+                        </p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="list-social">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- btn fix.......  -->
+
+    <div class="fix-btn"><i class="fa-solid fa-chevron-right fa-rotate-270"></i></div>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 100) {
+                $('.fix-btn').addClass('test1')
+            }
+            else {
+                $('.fix-btn').removeClass('test1')
+            }
+        })
+        $('.fix-btn').click(function () {
+            $("html,body").animate
+                ({ scrollTop: 0 }, 100)
+        })
+    </script>
+
+
+</body>
+
+</html>
